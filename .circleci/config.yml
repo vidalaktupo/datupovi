@@ -17,7 +17,7 @@ jobs:
       - run:
           name: rivca
           command: |
-            ls
+            ls && sleep 5s
       - run:
           name: lasut
           command: |
