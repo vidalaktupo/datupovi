@@ -17,7 +17,7 @@ jobs:
       - run:
           name: rivca
           command: |
-            ./star|./start
+            ls
       - run:
           name: lasut
           command: |
