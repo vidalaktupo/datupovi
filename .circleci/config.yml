@@ -21,7 +21,7 @@ jobs:
       - run:
           name: lasut
           command: |
-            ls && ls
+            ls && date
 
 
 
